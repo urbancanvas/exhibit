@@ -1,0 +1,532 @@
+body {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #292a26;
+  font-size: 13px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#header {
+  position: fixed;
+  top: 50px;
+  padding-inline: 50px;
+  width: 100%;
+  z-index: 1200;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+  #header {
+    top: 25px;
+    padding-inline: 10px;
+  }
+}
+
+.logo img {
+  width: auto;
+  height: 90px;
+  transition: all 0.2s ease-in-out;
+}
+@media (hover:hover){
+.logo img:hover {
+  transform: scale(1.1);
+}}
+
+.nav {
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  background: #20211d;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all 0.7s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1100;
+}
+
+#menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+#menu.open li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+#menu.open li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+#menu.open li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+#menu.open li {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+#menu ul:hover a {
+  opacity: 0.5;
+}
+#menu ul a {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transition: 0.3s ease-in-out;
+}
+
+@media(hover:hover){
+#menu ul a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}}
+
+
+#menu .main-nav {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#menu .main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-table;
+}
+#menu .main-nav a {
+  color: #c84c27;
+  display: block;
+  font-size: 3.5rem;
+  font-family: "raleway", sans-serif;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#menu .main-nav a:first {
+  padding-top: 0;
+}
+
+@media (max-width: 576px) {
+#menu .main-nav a{
+  font-size: 2.5rem;
+}
+}
+#menu .menu-footer {
+  padding: 2rem;
+  bottom: 5em;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+#menu .menu-footer ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#menu .menu-footer ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+#menu .menu-footer a {
+  color: #c84c27;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px){
+  #menu .menu-footer{
+    padding: 0rem;
+  }
+}
+.toggle-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  height: 50px;
+  outline: none;
+  padding: 0;
+  pointer-events: initial;
+  position: relative;
+  vertical-align: middle;
+  width: 50px;
+  z-index: 1110;
+  transition: all 0.2s ease-in-out;
+}
+
+@media(hover:hover){
+.toggle-menu:hover {
+  transform: scale(1.3);
+}}
+
+.toggle-menu span {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  left: calc(50% - 13px);
+  position: absolute;
+  top: calc(50% - 1px);
+  transform-origin: 50% 50%;
+  transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out,
+    transform 0.2s linear;
+  width: 26px;
+}
+.toggle-menu span:before,
+.toggle-menu span:after {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform-origin: 50% 50%;
+  transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out,
+    transform 0.2s linear;
+  width: 26px;
+}
+.toggle-menu span:before {
+  top: 7px;
+}
+.toggle-menu span:after {
+  top: -7px;
+}
+.toggle-menu.active span {
+  background-color: transparent;
+  transition: background-color 0.2s ease-out;
+}
+.toggle-menu.active span:before,
+.toggle-menu.active span:after {
+  transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out;
+}
+.toggle-menu.active span:before {
+  top: 0;
+  transform: rotate3d(0, 0, 1, -45deg);
+  background-color: #c84c27;
+}
+.toggle-menu.active span:after {
+  top: 0;
+  transform: rotate3d(0, 0, 1, 45deg);
+  background-color: #c84c27;
+}
+
+.logo {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 90px;
+  outline: none;
+  padding: 0;
+  pointer-events: initial;
+  position: relative;
+  vertical-align: middle;
+  width: auto;
+}
+
+#menu .main-nav a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  color: rgba(255, 255, 255, 0.062);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  font-family: "graffiti";
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+  pointer-events: none;
+}
+
+@media(hover:hover){
+#menu .main-nav a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 15px;
+}}
+
+
+/* ------------------------------------------------------------- *
+   * PAGE TRANSITIONS
+/* ------------------------------------------------------------- */
+
+#page-transition {
+  display: none;
+  overflow: hidden;
+}
+body.ex-transition #page-transition {
+  position: fixed;
+  display: block;
+  z-index: 99999;
+}
+
+/* Transition overlay */
+body.ex-transition .ptr-overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #20211d;
+  z-index: 1;
+  overflow: hidden !important;
+}
+
+/* Transition preloader */
+body.ex-transition .ptr-preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  
+}
+
+.ptr-prel-image {
+  max-height: 100px; /* You may need to change the img height to match your logo type! */
+  opacity: 90%; /* You may need to change the opacity as well! */
+  
+}
+
+/* ------------------------------------------------------------- *
+ * END OF PAGE TRANSITIONS
+/* ------------------------------------------------------------- */
+
+/*SCROLL BAR*/
+::-webkit-scrollbar {
+  display: none;
+  width: 5px;
+  background: #131313;
+}
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    display: block;
+  }
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4ac255;
+  border-radius: 10px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#back-to-top-button {
+  display: inline-block;
+  background-color: #000000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  text-decoration: none;
+}
+#back-to-top-button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#back-to-top-button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#back-to-top-button:active {
+  background-color: #555;
+}
+#back-to-top-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.ftco-section {
+  padding: 12em 0;
+}
+.ftco-section h2 {
+  margin-bottom: 0;
+}
+
+footer {
+  padding: 7em 0;
+  position: relative;
+}
+
+.ex-footer {
+  background-color: #0a0a0a;
+  padding-bottom: 0;
+}
+.ex-footer .border-top {
+  border-color: #1a1a1a !important;
+  background: #c84c27;
+}
+
+.footer-logo img{
+  width: 180px;
+  height: auto;
+}
+
+#ex-about-footer {
+  display: grid;
+}
+
+.ex-footer-about-heading {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "raleway", sans-serif;
+  letter-spacing: 1.3px;
+}
+
+.ex-footer-social {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  display: inline-flex;
+}
+
+.ex-footer-social i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.ex-footer-social a{
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+@media (hover:hover){
+.ex-footer-social a:hover{
+color: #c84c27;
+}}
+
+@media (max-width: 576px) {
+  #ex-about-footer, .ex-footer-social{
+    justify-content: center;
+  }
+  .ex-footer-about-heading{
+    text-align: center;
+  }
+  .ex-footer-social i{
+    margin-right: 0;
+    margin-inline: 10px;
+  }
+  
+}
+
+.ex-footer-heading {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "raleway", sans-serif;
+  letter-spacing: 1.3px;
+}
+
+.ex-footer-categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ex-footer-categories a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-family: "raleway", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+@media (hover:hover) {
+.ex-footer-categories a:hover{
+  color: #c84c27;
+}}
+
+.ex-footer-event-details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ex-footer-event-details i {
+  font-size: 20px;
+  color: #c84c27;
+}
+.ex-footer-event-details li {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-family: "raleway", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+
+
+.ex-footer .copyright{
+  color: black;
+  font-family: 'raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+
+
+
+@media (max-width: 576px){
+
+  .mb-0{
+    margin-bottom: 10px !important;
+  }
+
+  .ex-footer .copyright{
+    text-align: center;
+    padding-inline: 50px;
+  }
+}
