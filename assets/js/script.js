@@ -13,7 +13,7 @@ $('.toggle-menu').click (function(){
 		
 			setTimeout(function(){
 				HideLoad(); // call out animations.
-			}, 1000);
+			}, 0);
 		
 
 
@@ -101,12 +101,5 @@ function myFunction() {
   }
 }
 
-/* If browser back button was used, flush cache */
-(function () {
-	window.onpageshow = function(event) {
-		if (event.persisted) {
-			window.location.reload();
-		}
-	};
-})();
+
 
