@@ -101,5 +101,10 @@ function myFunction() {
   }
 }
 
-
+/* If browser back button was used, flush cache */
+window.onpageshow = function(event) {
+	if (event.persisted) {
+	  window.location.reload();
+	}
+  };
 
