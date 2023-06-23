@@ -5,6 +5,10 @@ new Splide( '#committees',{
 
 new Splide( '#about-slider',{
     type   : 'loop',
-    arrows     : false,
-    
+    arrows     : false,  
+} ).mount();
+
+new Splide( '#sponsor-container',{
+    type   : 'loop',
+    lazyload: 'nearby',
 } ).mount();
