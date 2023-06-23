@@ -1,2 +1,2 @@
 function myFunction(){
-    $('#featured-works a, .lightBoxVideoLink').simpleLightbox();}
+    $('#featured-works a, #mypic a, .lightBoxVideoLink').simpleLightbox();}
