@@ -13,7 +13,7 @@ $('.toggle-menu').click (function(){
 		
 			setTimeout(function(){
 				HideLoad(); // call out animations.
-			}, 0);
+			}, 1000);
 		
 
 
