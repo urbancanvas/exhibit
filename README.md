@@ -15,5 +15,5 @@ This project is the official website for the interactive exhibit entitled “Urb
 
 ## Screenshots
 
-![App Screenshot]([image-2023-06-24-205101488.png](https://postimg.cc/tsZKHr8N))
+![image-2023-06-24-205101488.png](https://postimg.cc/tsZKHr8N))
 
