@@ -1,3 +1,9 @@
+window.onpageshow = function (event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+};
+
 $('.toggle-menu').click (function(){
     $(this).toggleClass('active');
     $('#menu').toggleClass('open');
@@ -13,7 +19,7 @@ $('.toggle-menu').click (function(){
 		
 			setTimeout(function(){
 				HideLoad(); // call out animations.
-			}, 1000);
+			}, 500);
 		
 
 
