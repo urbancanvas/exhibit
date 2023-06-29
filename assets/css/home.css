@@ -134,7 +134,7 @@
 #about {
   background-color: #20211d;
   padding-top: 125px;
-  padding-bottom: 125px;
+  padding-bottom: 200px;
   position: relative;
 }
 .tp-sub-title {
@@ -161,7 +161,7 @@
 @media (max-width: 576px) {
   #about {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
     padding-inline: 30px;
   }
 
