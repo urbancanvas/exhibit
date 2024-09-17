@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Canvas | A406 Exhibit</title>
+</head>
+<!-- GRAFFITI FONT -->
+<style>@font-face { font-family: graffiti; src: url(assets/fonts/AnotherTag-vmK4M.ttf);}</style>
+<!-- PRELOAD CSS -->
+<link rel="preload" href="assets/css/critical.css" as="style"/>
+<link rel="preload" href="assets/css/home.css" as="style"/>
+<!-- PRELOAD JS -->
+<link rel="preload" href="assets/js/script.js" as="script"/>
+<link rel="preload" href="assets/js/slider.js" as="script"/>
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/critical.css">
+<link rel="stylesheet" href="assets/css/home.css">
+<!-- THIRD PARTY CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css" integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap" rel="stylesheet">
+<!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/FAVICON/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/FAVICON/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/FAVICON/favicon-16x16.png">
+<link rel="manifest" href="assets/img/FAVICON/site.webmanifest">
+<!-- END OF HEAD -->
+
+<!-- START OF BODY-->
+<body class="ex-transition">
+<!-- NAV BAR -->
+<header id="header">
+    <nav class="nav">
+      <button class="toggle-menu"> <span></span> </button>
+      <button class=logo><a href="index.html"><img src="assets/img/HEADER LOGO/header-logo.webp" alt=""></a></button>
+    </nav>
+  </header>
+  <!-- END OF NAV BAR -->
+  <!-- OVERLAY MENU -->
+  <div id="menu" class="">
+    <nav class="main-nav">
+      <ul>
+        <li> <a href="index.html" data-text="Home"> Home </a> </li>
+        <li> <a href="artists-gallery.html" data-text="Artists"> Artists </a> </li>
+        <li> <a href="https://forms.gle/ZBBD5146brFntz9J8" target="_blank" data-text="Tickets"> Tickets </a> </li>
+      </ul>
+    </nav> 
+    <footer class="menu-footer">
+      <nav class="footer-nav">
+        <ul>
+          <li> <a href="https://www.facebook.com/urbancanvas.exhibit" target="_blank"> <i class="fab fa-facebook-f"></i>&nbsp; Facebook </a> </li>
+          <li> <a href="https://www.instagram.com/urbancanvas.exhibit" target="_blank"> <i class="fab fa-instagram"></i>&nbsp; Instagram </a> </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+<!-- END OF OVERLAY MENU -->
+
+<!-- PAGE TRANSITION -->
+<div id="page-transition">      
+    <div class="ptr-overlay"></div>
+    <div class="ptr-preloader">
+        <div class="ptr-prel-content">
+           <img src="assets/img/TRANSITION-LOGO/logo-transition.webp" class="ptr-prel-image" alt="logo" title="logo">
+        </div> 
+    </div> 
+</div>
+  <!-- END OF PAGE TRANSITION -->
+
+<!-- HERO SECTION-->
+<div class="upper-page" id="page-home">
+  <!-- center container start -->
+  <div class="center-container">
+      <!-- center block start -->
+      <div class="center-block">
+          <!-- section title start -->
+          <div class="logo-container"><img class="hero-logo reveal" src="assets/img/HERO-LOGO/HERO-LOGO.webp" loading="eager" alt=""></div>
+          <!-- section title end -->
+          <!-- divider start -->
+          <div class="divider-m-2"></div>
+          <!-- divider end -->
+          <!-- scroll down start -->
+          <div class="scroll-down-container">
+            <div class="arrow-field">
+              <a href="#about"> <div class="box"> <span></span> <span></span> <span></span> </div> </a>
+            </div>
+          </div>
+          <!-- scroll down end -->
+      </div>
+      <!-- center block end -->
+  </div>
+  <!-- center container end -->
+  <!-- hero bg start -->
+  <div class="hero-fullscreen">
+      <!-- single image start -->
+      <div class="hero-fullscreen-FIX">
+          <div class="hero-bg overlay overlay-dark-70">
+            <video src="assets/img/BG/hero.mp4" autoplay loop muted></video>
+          </div>
+      </div>
+      <!-- single image end -->
+  </div>
+  <!-- hero bg end -->
+</div>
+<!--  END OF HERO SECTION-->
+
+<!--  ABOUT SECTION-->
+<section id="about" class="p-relative">
+  <!--  ABOUT SLIDER SECTION-->
+    <div class="container splide" id="about-slider">
+        <div class="row justify-content-center" aria-label="about-slider-section">
+           <div class="col-xl-8 col-lg-10 splide__track">
+              <div class="tpabout text-center splide__list">
+                <div class="tp-section-title splide__slide">
+                  <span class="tp-sub-title mb-20">Brand Story</span>
+                  <h2 class="tp-title mb-30">The streets are the testaments to the arts of urban life: different places tell different tales. From sidewalk graffiti, murals on the wall, slaps stuck to a signboard– every art on the street speaks a story. Urban Canvas takes you on a walk-trip in the streets: the alley, the block, and the ville where artists showcase their imagination on how they see the wonders of urban life.
+                  </h2>
+               </div>
+                 <div class="tp-section-title splide__slide">
+                    <span class="tp-sub-title mb-20">About Us</span>
+                    <h2 class="tp-title mb-30">We are the A406 Students from LPU- Manila showcasing this year’s exhibit, URBAN CANVAS- take a walk trip with us! Hit The Streets- Explore The Exhibit!
+                    </h2>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  <!--  END OF ABOUT SLIDER SECTION-->
+</section>
+<!--  END OF ABOUT SECTION-->
+
+<!-- ARTIST ANIMATION DIVIDER -->
+<div class="animated-text-wrapper-r">
+  <div class="animated-text-r">
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+    <div class="animated-text-content-r"><span>The&nbsp;</span> Artists. &nbsp;</div>
+  </div>
+</div>
+<!-- END OF ARTIST ANIMATION DIVIDER  -->
+
+<!-- TEAM SECTION -->
+<section id="committees" style="background-image: url(assets/img/BG/bg-with-graffiti.webp);" class="p-relative splide" aria-label="committee-section">
+   <div class="container splide__track">
+    <div class="splide__list">
+       <div class="row justify-content-center splide__slide" id="officers-row">
+          <div class="col-xl-10 col-lg-10">
+             <div class="tpabout text-center">
+                <div class="team-committee-title">
+                   <div><span class="committee-sub-title mb-20">Officers</span></div>
+                </div>
+                <div class="row" id="committee-slider">
+                  <div class="col-sm-3" id="committee-card">
+                     <div class="ex-team">
+                         <div class="ex-team-thumbnail">
+                          <!-- INSERT IMAGE HERE -->
+                           <img src="assets/img/STUDENT-PHOTOS/headshot/summer-matias.webp"  alt="team img" />
+                         </div>
+                         <div class="ex-team-content">
+                           <h4 class="ex-team-title">Summer Matias</h4>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-3" id="committee-card">
+                    <div class="ex-team">
+                        <div class="ex-team-thumbnail">
+                          <!-- INSERT IMAGE HERE -->
+                          <img src="assets/img/STUDENT-PHOTOS/headshot/christine-crisostomo.webp"  alt="team img" />
+                        </div>
+                        <div class="ex-team-content">
+                          <h4 class="ex-team-title">Christine Crisostomo</h4>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-sm-3" id="committee-card">
+                  <div class="ex-team">
+                      <div class="ex-team-thumbnail">
+                        <!-- INSERT IMAGE HERE -->
+                        <img src="assets/img/STUDENT-PHOTOS/headshot/justin-gonzalez.webp"  alt="team img" />
+                      </div>
+                      <div class="ex-team-content">
+                        <h4 class="ex-team-title">Justin Gonzalez</h4>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-3" id="committee-card">
+                  <div class="ex-team">
+                      <div class="ex-team-thumbnail">
+                        <!-- INSERT IMAGE HERE -->
+                        <img src="assets/img/STUDENT-PHOTOS/headshot/aldous-jerusalem.webp"  alt="team img" />
+                      </div>
+                      <div class="ex-team-content">
+                        <h4 class="ex-team-title">Aldous Jerusalem</h4>
+                      </div>
+                  </div>
+                </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="row justify-content-center splide__slide" id="officers-row">
+        <div class="col-xl-10 col-lg-10">
+           <div class="tpabout text-center">
+              <div class="team-committee-title">
+                 <div><span class="committee-sub-title mb-20">Logistics</span></div>
+              </div>
+              <div class="row" id="committee-slider">
+                <div class="col-sm-3" id="committee-card">
+                   <div class="ex-team">
+                       <div class="ex-team-thumbnail">
+                        <!-- INSERT IMAGE HERE -->
+                         <img src="assets/img/STUDENT-PHOTOS/headshot/robenj-rustia.webp" alt="team img" />
+                       </div>
+                       <div class="ex-team-content">
+                         <h4 class="ex-team-title">Robenj Rustia</h4>
+                       </div>
+                   </div>
+                </div>
+                <div class="col-sm-3" id="committee-card">
+                  <div class="ex-team">
+                      <div class="ex-team-thumbnail">
+                        <!-- INSERT IMAGE HERE -->
+                        <img src="assets/img/STUDENT-PHOTOS/headshot/rikki-lou-bonifacio.webp" alt="team img" />
+                      </div>
+                      <div class="ex-team-content">
+                        <h4 class="ex-team-title">Rikki Lou Bonifacio</h4>
+                      </div>
+                  </div>
+               </div>
+               <div class="col-sm-3" id="committee-card">
+                <div class="ex-team">
+                    <div class="ex-team-thumbnail">
+                      <!-- INSERT IMAGE HERE -->
+                      <img src="assets/img/STUDENT-PHOTOS/headshot/kenneth-charles-boco.webp" alt="team img" />
+                    </div>
+                    <div class="ex-team-content">
+                      <h4 class="ex-team-title">Kenneth Boco</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-3" id="committee-card">
+                <div class="ex-team">
+                    <div class="ex-team-thumbnail">
+                      <!-- INSERT IMAGE HERE -->
+                      <img src="assets/img/STUDENT-PHOTOS/headshot/ritzen-nunez.webp" alt="team img" />
+                    </div>
+                    <div class="ex-team-content">
+                      <h4 class="ex-team-title">Ritzen Nuñez</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-3" id="committee-card">
+                <div class="ex-team">
+                    <div class="ex-team-thumbnail">
+                      <!-- INSERT IMAGE HERE -->
+                      <img src="assets/img/STUDENT-PHOTOS/headshot/sophia-maano.webp"  alt="team img" />
+                    </div>
+                    <div class="ex-team-content">
+                      <h4 class="ex-team-title">Sophia Maaño</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-3" id="committee-card">
+                <div class="ex-team">
+                    <div class="ex-team-thumbnail">
+                      <!-- INSERT IMAGE HERE -->
+                      <img src="assets/img/STUDENT-PHOTOS/headshot/david-fajarda.webp"  alt="team img" />
+                    </div>
+                    <div class="ex-team-content">
+                      <h4 class="ex-team-title">David Fajarda</h4>
+                    </div>
+                </div>
+              </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="row justify-content-center splide__slide" id="officers-row">
+      <div class="col-xl-10 col-lg-10">
+         <div class="tpabout text-center">
+            <div class="team-committee-title">
+               <div><span class="committee-sub-title mb-20">Creatives</span></div>
+            </div>
+            <div class="row" id="committee-slider">
+              <div class="col-sm-3" id="committee-card">
+                <div class="ex-team">
+                    <div class="ex-team-thumbnail">
+                      <!-- INSERT IMAGE HERE -->
+                      <img src="assets/img/STUDENT-PHOTOS/headshot/wilson-catindig.webp"  alt="team img" />
+                    </div>
+                    <div class="ex-team-content">
+                      <h4 class="ex-team-title">Wilson Catindig</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-3" id="committee-card">
+                 <div class="ex-team">
+                     <div class="ex-team-thumbnail">
+                      <!-- INSERT IMAGE HERE -->
+                       <img src="assets/img/STUDENT-PHOTOS/headshot/kirby-arroyo.webp" alt="team img" />
+                     </div>
+                     <div class="ex-team-content">
+                       <h4 class="ex-team-title">Kirby Arroyo</h4>
+                     </div>
+                 </div>
+              </div>
+              <div class="col-sm-3" id="committee-card">
+                <div class="ex-team">
+                    <div class="ex-team-thumbnail">
+                      <!-- INSERT IMAGE HERE -->
+                      <img src="assets/img/STUDENT-PHOTOS/headshot/carlo-garcia.webp" alt="team img" />
+                    </div>
+                    <div class="ex-team-content">
+                      <h4 class="ex-team-title">Carlo Garcia</h4>
+                    </div>
+                </div>
+             </div>
+             <div class="col-sm-3" id="committee-card">
+              <div class="ex-team">
+                  <div class="ex-team-thumbnail">
+                    <!-- INSERT IMAGE HERE -->
+                    <img src="assets/img/STUDENT-PHOTOS/headshot/althea-erfe.webp" alt="team img" />
+                  </div>
+                  <div class="ex-team-content">
+                    <h4 class="ex-team-title">Althea Erfe</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-3" id="committee-card">
+              <div class="ex-team">
+                  <div class="ex-team-thumbnail">
+                    <!-- INSERT IMAGE HERE -->
+                    <img src="assets/img/STUDENT-PHOTOS/headshot/sheri-de-guzman.webp"  alt="team img" />
+                  </div>
+                  <div class="ex-team-content">
+                    <h4 class="ex-team-title">Sheri De Guzman</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-3" id="committee-card">
+              <div class="ex-team">
+                  <div class="ex-team-thumbnail">
+                    <!-- INSERT IMAGE HERE -->
+                    <img src="assets/img/STUDENT-PHOTOS/headshot/joaquin-bautista.webp"  alt="team img" />
+                  </div>
+                  <div class="ex-team-content">
+                    <h4 class="ex-team-title">Joaquin Bautista</h4>
+                  </div>
+              </div>
+            </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="row justify-content-center splide__slide" id="officers-row">
+      <div class="col-xl-10 col-lg-10">
+         <div class="tpabout text-center">
+            <div class="team-committee-title">
+               <div><span class="committee-sub-title mb-20">Production</span></div>
+            </div>
+            <div class="row" id="committee-slider">
+              <div class="col-sm-3" id="committee-card">
+                 <div class="ex-team">
+                     <div class="ex-team-thumbnail">
+                      <!-- INSERT IMAGE HERE -->
+                       <img src="assets/img/STUDENT-PHOTOS/headshot/louie-roa.webp"  alt="team img" />
+                     </div>
+                     <div class="ex-team-content">
+                       <h4 class="ex-team-title">Louie Roa</h4>
+                     </div>
+                 </div>
+              </div>
+              <div class="col-sm-3" id="committee-card">
+                <div class="ex-team">
+                    <div class="ex-team-thumbnail">
+                      <!-- INSERT IMAGE HERE -->
+                      <img src="assets/img/STUDENT-PHOTOS/headshot/justin-samia.webp"  alt="team img" />
+                    </div>
+                    <div class="ex-team-content">
+                      <h4 class="ex-team-title">Justin Samia</h4>
+                    </div>
+                </div>
+             </div>
+             <div class="col-sm-3" id="committee-card">
+              <div class="ex-team">
+                  <div class="ex-team-thumbnail">
+                    <!-- INSERT IMAGE HERE -->
+                    <img src="assets/img/STUDENT-PHOTOS/headshot/raphael-ian-fremista.webp"  alt="team img" />
+                  </div>
+                  <div class="ex-team-content">
+                    <h4 class="ex-team-title">Ian Fremista</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-3" id="committee-card">
+              <div class="ex-team">
+                  <div class="ex-team-thumbnail">
+                    <!-- INSERT IMAGE HERE -->
+                    <img src="assets/img/STUDENT-PHOTOS/headshot/romilo-difuntorum.webp"  alt="team img" />
+                  </div>
+                  <div class="ex-team-content">
+                    <h4 class="ex-team-title">Milo Difuntorum</h4>
+                  </div>
+              </div>
+            </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row justify-content-center splide__slide" id="officers-row">
+    <div class="col-xl-10 col-lg-10">
+       <div class="tpabout text-center">
+          <div class="team-committee-title">
+             <div><span class="committee-sub-title mb-20">Marketing</span></div>
+          </div>
+          <div class="row" id="committee-slider">
+            <div class="col-sm-3" id="committee-card">
+               <div class="ex-team">
+                   <div class="ex-team-thumbnail">
+                    <!-- INSERT IMAGE HERE -->
+                     <img src="assets/img/STUDENT-PHOTOS/headshot/anniemae-panelo.webp" alt="team img" />
+                   </div>
+                   <div class="ex-team-content">
+                     <h4 class="ex-team-title">Annie Mae Panelo</h4>
+                   </div>
+               </div>
+            </div>
+            <div class="col-sm-3" id="committee-card">
+              <div class="ex-team">
+                  <div class="ex-team-thumbnail">
+                    <!-- INSERT IMAGE HERE -->
+                    <img src="assets/img/STUDENT-PHOTOS/headshot/shelly-nieto.webp"  alt="team img" />
+                  </div>
+                  <div class="ex-team-content">
+                    <h4 class="ex-team-title">Shelly Nieto</h4>
+                  </div>
+              </div>
+           </div>
+           <div class="col-sm-3" id="committee-card">
+            <div class="ex-team">
+                <div class="ex-team-thumbnail">
+                  <!-- INSERT IMAGE HERE -->
+                  <img src="assets/img/STUDENT-PHOTOS/headshot/albert-patulot.webp"  alt="team img" />
+                </div>
+                <div class="ex-team-content">
+                  <h4 class="ex-team-title">Albert Patulot</h4>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3" id="committee-card">
+            <div class="ex-team">
+                <div class="ex-team-thumbnail">
+                  <!-- INSERT IMAGE HERE -->
+                  <img src="assets/img/STUDENT-PHOTOS/headshot/yanna-rayos.webp" alt="team img" />
+                </div>
+                <div class="ex-team-content">
+                  <h4 class="ex-team-title">Yanna Rayos</h4>
+                </div>
+            </div>
+          </div>
+          </div>
+       </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  END OF TEAM SECTION-->
+
+<!--  SPONSORS SECTION-->
+<section id="event-details" class="p-relative">
+  <div class="container" id="exhibit-info">
+    <div class="row justify-content-center">
+       <div class="col-xl-6 col-lg-10">
+          <div class="tpabout text-center">
+             <div class="tp-section-title">
+                <span class="tp-sub-title mb-20">Onsite Exhibit</span>
+                <h2 class="tp-title mb-30"><i class="fa-regular fa-calendar"></i>&nbsp; July 12-14, 2023</h2>
+                <h2 class="tp-title mb-30"><i class="fa-solid fa-location-dot"></i>&nbsp; LPU Manila Library - Sotero H. Laurel- Academic Resource Center </h2>
+                <button class="button-5"><a href="https://forms.gle/ZBBD5146brFntz9J8"  target="_blank"><span>Buy Ticket</span></a></button>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div> 
+  <div class="container splide" id="sponsor-container">
+       <div class="row justify-content-center">
+          <div class="col-xl-10 col-lg-10 splide__track">
+             <div class="tpabout text-center splide__list">
+              <div class="sponsor-section-title splide__slide">
+                <span class="sponsor-sub-title mb-20">Our Event Partners</span>
+                <p class="sponsors-logo mb-0">
+                  <a href="https://www.facebook.com/adobomagazine/" target="_blank"><img class="home-sponsor-logo" src="assets/img/MEDIA-PARTNERS-LOGO/adobo-magazine.webp" loading="lazy" alt="sponsors" /></a>
+                  <a href="https://www.facebook.com/blog.ph/" target="_blank"><img class="home-sponsor-logo" src="assets/img/MEDIA-PARTNERS-LOGO/blog-ph.webp" loading="lazy" alt="sponsors" /></a>
+                  <a href="https://www.facebook.com/lpumnlcassg" target="_blank"><img class="home-sponsor-logo" src="assets/img/MEDIA-PARTNERS-LOGO/cas-sg.webp" loading="lazy" alt="sponsors" /></a>
+                <a href="" target="_blank"><img class="home-sponsor-logo" src="assets/img/MEDIA-PARTNERS-LOGO/cot.webp" loading="lazy" alt="sponsors" /></a>
+                  <a href="https://www.facebook.com/LPUCIR.FLA/" target="_blank"><img class="home-sponsor-logo" src="assets/img/MEDIA-PARTNERS-LOGO/fla.webp" loading="lazy" alt="sponsors" /></a>
+                  <a href="https://www.facebook.com/lpumassoc" target="_blank"><img class="home-sponsor-logo" src="assets/img/MEDIA-PARTNERS-LOGO/lmas.webp" loading="lazy" alt="sponsors" /></a>
+                  <a href="https://www.facebook.com/lyceanpioneer" target="_blank"><img class="home-sponsor-logo" src="assets/img/MEDIA-PARTNERS-LOGO/lycean-pioneer.webp" loading="lazy" alt="sponsors" /></a>
+                  <a href="https://www.facebook.com/LYCESGOManila" target="_blank"><img class="home-sponsor-logo" src="assets/img/MEDIA-PARTNERS-LOGO/lycesgo.webp" loading="lazy" alt="sponsors" /></a>
+                  <a href="https://www.facebook.com/LPU.TBatingaw" target="_blank"><img class="home-sponsor-logo" src="assets/img/MEDIA-PARTNERS-LOGO/tanghalang-batingaw.webp" loading="lazy" alt="sponsors" /></a>
+                </p>
+             </div>
+                <div class="sponsor-section-title splide__slide">
+                   <span class="sponsor-sub-title mb-20">Our Sponsors</span>
+                   <p class="sponsors-logo mb-0">
+                     <a href="https://www.facebook.com/profile.php?id=100057237318730" target="_blank"><img class="home-sponsor-logo" src="assets/img/SPONSORS-LOGO/mjn.webp" loading="lazy" alt="sponsors" /></a>
+                     <a href="https://www.facebook.com/naturespring/" target="_blank"><img class="home-sponsor-logo" src="assets/img/SPONSORS-LOGO/natures-spring.webp" loading="lazy" alt="sponsors" /></a>
+                     <a href="https://www.facebook.com/osamaclothing/" target="_blank" ><img class="home-sponsor-logo" src="assets/img/SPONSORS-LOGO/osama-clothing.webp" loading="lazy" alt="sponsors" /></a>
+                     <a href="https://www.facebook.com/tidalsupplyco/" target="_blank"><img class="home-sponsor-logo" src="assets/img/SPONSORS-LOGO/tidal.webp" loading="lazy" alt="sponsors" /></a>
+                    <a href="https://www.facebook.com/thenook.mnl/" target="_blank"><img class="home-sponsor-logo" src="assets/img/SPONSORS-LOGO/nook-mnl.webp" loading="lazy" alt="sponsors" /></a>
+                   </p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+</section>
+<!--  END OF SPONSORS SECTION-->
+
+<!--  CTA ARTIST PAGE SECTION-->
+<section id="artist-page" style="background-image: url(assets/img/BG/bg-cta.webp);" class="p-relative">
+   <div class="container">
+       <div class="row justify-content-center">
+          <div class="col-xl-10 col-lg-10">
+             <div class="text-center">
+                <div class="artist-page-section-title">
+                   <a href="artists-gallery.html"><span class="artist-page-sub-title mb-20">Hit The Streets!</span></a>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+</section>
+<!--  END OF CTA ARTIST PAGE SECTION-->
+
+<!-- BACK TO TOP BUTTON -->
+<a id="back-to-top-button"></a>
+<!-- END OF BACK TO TOP BUTTON -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="ex-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-md-0 mb-4" id="ex-about-footer">
+            <a href="index.html" class="footer-logo" ><img src="assets/img/FOOTER-LOGO/FOOTER-LOGO.webp" loading="lazy" alt="" /></a>
+            <h2 class="ex-footer-about-heading mt-4">Follow us</h2>
+            <ul class="ex-footer-social">
+              <li> <a href="https://www.facebook.com/urbancanvas.exhibit" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook" ><i class="fab fa-facebook-f"></i ></a> </li>
+              <li> <a href="https://www.instagram.com/urbancanvas.exhibit" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram" ><i class="fab fa-instagram"></i ></a> </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+            <h2 class="ex-footer-heading">Info</h2>
+            <ul class="ex-footer-event-details">
+              <li class="py-1 d-block"> <i class="fa-regular fa-calendar"></i>&nbsp; July 12-14 2023 </li>
+              <li class="py-1 d-block"> <i class="fa-solid fa-location-dot"></i>&nbsp; LPU Manila Library - Sotero H. Laurel Academic Resource Center </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+            <h2 class="ex-footer-heading">Contact Us</h2>
+            <ul class="ex-footer-event-details">
+              <li class="py-1 d-block"> <i class="fa-solid fa-envelope"></i>&nbsp; urbancanvasofficial@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+            <h2 class="ex-footer-heading">Quick Links</h2>
+            <ul class="ex-footer-categories">
+              <li><a href="index.html" class="py-1 d-block">Home</a></li>
+              <li><a href="artists-gallery.html" class="py-1 d-block">Artists</a></li>
+              <li><a href="https://forms.gle/ZBBD5146brFntz9J8"  target="_blank" class="py-1 d-block">Tickets</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 mt-5 border-top py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-8">
+              <p class="copyright"> Copyright &copy; <script> document.write(new Date().getFullYear()); </script> URBAN CANVAS. All rights reserved. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF FOOTER SECTION -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/slider.js"></script>
+<script defer src="https://kit.fontawesome.com/7e403103d5.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
